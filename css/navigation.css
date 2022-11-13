@@ -1,0 +1,88 @@
+@import url("//unpkg.com/element-ui@2.15.10/lib/theme-chalk/index.css");
+.el-header {
+    background-color: rgb(237, 224, 215);
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+/* .el-aside {
+  background-color: #D3DCE6;
+  color: #333;
+  text-align: center;
+  line-height: 570px;
+} */
+  
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  line-height: 500px;
+  background-image:url("../img/background1.png"); 
+  background-repeat:no-repeat; 
+  background-size: cover;
+  
+}
+  
+body > .el-container {
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+.el-aside {
+  line-height: 260px;
+}
+
+.el-header img {
+  width: 200px; 
+  height: 62px;
+  z-index: index 1;
+  float: left;
+}
+
+/* .el-header p {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(181, 80, 85);
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 1;
+  width: 1007px;
+  height: 97px;
+  margin-top:auto;
+} */
+.menu {
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  width: 200px;
+  height: 0px;
+
+
+}
+
+.menu span {
+  font-size: 20px;
+}
+
+.el-main a {
+  text-decoration:none;
+  color:white;
+}
+
+.el-header span {
+  display: block;
+  float: left;
+  margin-left: 400px;
+  /* padding-right: 300px; */
+  font-size: 25px;
+  color: rgb(181, 80, 85);
+  font-weight: bold;
+}
+.el-header a {
+  float: right;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration:none;
+  color:rgb(181, 80, 85);
+}

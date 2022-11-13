@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
+    <title>首页</title>
+    <style>
+        html,
+        body,
+        #app,
+        .el-container{
+          padding: 0px;
+          margin: 0px;
+          height: 700px;
+        }
+      </style>
+</head>
+<body>
+     <!-- import Vue before Element -->
+     <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+     <!-- import JavaScript -->
+     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+     <div id="app">
+        <el-container >
+          <el-header>
+            <img src="./img/院庆logo.png" alt="" >
+            <span><a href="./navigation.html" ><i class="el-icon-discover"></i></a></span>
+            <span>院元宇宙</span>
+            <span>福友圈</span>
+            <span>校友风采</span>
+            <span>院庆祝福</span>
+            <span><a href="https://ccds.fzu.edu.cn/xwzx/xydt.htm" target="_blank">大事记</a></span>
+            <span>院庆日程</span>
+          </el-header>
+            <img src="./img/background2.png" alt="" style="display: block; width: 100%; height: 100%;" usemap="#umap"/>
+            <map name="umap">
+                <area shape="rect" coords="111,91,600,341" href="#"  target="_blank">
+                <area shape="rect" coords="505,91,1100,341" href="https://ccds.fzu.edu.cn/xwzx/xydt.htm"  target="_blank">
+                <area shape="rect" coords="111,370,600,541" href="#"  target="_blank">
+                <area shape="rect" coords="505,370,1100,741," href="#"  target="_blank">
+                <area shape="rect" coords="750,47,1583,182," href="#"  target="_blank">
+            </map>    
+        </el-container>
+     </div>
+     <script>
+        new Vue().$mount('#app')
+      </script>
+</body>
+</html>
