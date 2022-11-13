@@ -1,0 +1,294 @@
+/*top and background*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bp{
+    position: fixed;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.top-bar {
+    min-width: 1240px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+}
+.box-top {
+    width: 100%;
+    min-width: 1240px;
+    background-color: #EDE0D7;
+    padding:20px 0px 20px 0px;
+}
+.top-ui li{
+    width:33%;
+    min-width: 50px;
+    float: left;
+    text-align: center;
+    display: block;
+}
+.titlecss{
+    margin: -10px 90px 0px 110px;
+    color: #980F17;
+}
+.top-ui a{
+    margin: 0;
+    float: right;
+    color: #980F17;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 12px;
+}
+.top-ui a:hover{
+    color: #b90e19;
+}
+.top-ui img{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    top: -15px;
+}
+
+/*onlineschedule*/
+.leftbox{
+  min-width: 500px;
+  width: 40%;
+  float: left;
+}
+.hh1{
+    display: inline-block;
+    margin: 5px 0px 0px 10px;
+    color: #B05055;
+}
+  #scheduleline{
+    list-style: none;
+    margin: 0px 0px 30px 20px;
+    padding-left: 20px;
+    border-left: 8px solid #B05055;
+  }
+  #scheduleline li {
+    margin: 15px 0 30px 0;
+    position: relative;
+  }
+  #scheduleline p {
+    margin: 0 0 15px;
+  }
+  .circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -34px;
+    width: 10px;
+    height: 10px;
+    background: #ee7e82;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+  }
+  
+  .content {
+    max-height: 20px;
+    padding: 50px 20px 0;
+    border-color: #B05055;
+    background-color: #B05055;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    position: relative;
+  }
+  .content:before, .content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 99%;
+  }
+  .content:before {
+    border-right-color: inherit;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .content:after {
+    border-right-color: #B05055;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+  }
+  .content p {
+    max-height: 0;
+    color: transparent;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
+    overflow: hidden;
+  }
+  
+  .leftbox label {
+    font-size: 1.1rem;
+    margin:0 0 0 15px;
+    color: #fcfaf9;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 22px;
+    transition: transform 0.2s linear;
+  }
+  .radio {
+    display: none;
+  }
+  
+  .radio:checked + .relative label {
+    cursor: auto;
+    transform: translateX(20px);
+  }
+  .radio:checked + .relative .circle {
+    background: #B05055;
+  }
+  .radio:checked ~ .content {
+    max-height: 350px;
+    border-color: #B05055;
+    margin-right: 20px;
+    transform: translateX(15px);
+    transition: all 0.4s linear;
+  }
+  .radio:checked ~ .content p {
+    max-height: 400px;
+    color: #ffd4d4;
+    transition:  all 0.3s linear ;
+  }
+  .leftbox a{
+    color: #fd6b6b;
+    text-decoration: none;
+  }
+  .leftbox a:hover{
+    color: #f84a4a;
+}
+/*rightbox*/
+.right{
+  width:50%;
+  float: left;
+  margin-left: 8%;
+  min-width: 600px;
+}
+.rightbox{
+  width: 80%;
+  float: right;
+  min-width: 500px;
+}
+.rhh1{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 45.5%;
+    color: #B05055;
+}
+#rscheduleline{
+  list-style: none;
+  margin: 0px 0px 30px 0px;
+  padding-left: 20px;
+  border-right: 8px solid #B05055;
+}
+#rscheduleline li {
+  margin: 15px 20px 30px 0;
+  position: relative;
+}
+#rscheduleline p {
+  margin: 0 0 15px;
+}
+.rightbox label{
+  font-size: 1.1rem;
+  margin:0 0 0 45px;
+  color: #fcfaf9;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 22px;
+  transition: transform 0.2s linear;
+}
+.rcircle {
+  margin-top: -10px;
+  top: 50%;
+  right: -34px;
+  width: 10px;
+  height: 10px;
+  background: #ee7e82;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.rcontent {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: #B05055;
+  background-color: #B05055;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  position: relative;
+}
+.rcontent:before, .rcontent:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  left: 99%;
+}
+.rcontent:before {
+  border-left-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+.rcontent:after {
+  border-left-color: #B05055;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+.rcontent p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+.rradio {
+  display: none;
+}
+
+.rradio:checked + .rrelative label {
+  cursor: auto;
+  transform: translateX(-25px);
+}
+.rradio:checked + .rrelative .rcircle {
+  background: #B05055;
+}
+.rradio:checked ~ .rcontent {
+  max-height: 300px;
+  border-color: #B05055;
+  margin-right: 10px;
+  transform: translateX(-2px);
+  transition: all 0.4s linear;
+}
+.rradio:checked ~ .rcontent p {
+  max-height: 350px;
+  color: #ffd4d4;
+  transition:  all 0.3s linear ;
+}
+
+
+
+
