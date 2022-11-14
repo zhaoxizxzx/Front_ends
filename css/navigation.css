@@ -4,15 +4,8 @@
     color: #333;
     text-align: center;
     line-height: 60px;
+    height: 100%;
   }
-  
-/* .el-aside {
-  background-color: #D3DCE6;
-  color: #333;
-  text-align: center;
-  line-height: 570px;
-} */
-  
 .el-main {
   background-color: #E9EEF3;
   color: #333;
@@ -21,16 +14,17 @@
   background-image:url("../img/background1.png"); 
   background-repeat:no-repeat; 
   background-size: cover;
-  
+  height: 100%;
 }
   
 body > .el-container {
-  margin-bottom: 40px;
   height: 100%;
+  max-width: 1080px;
 }
 
 .el-aside {
   line-height: 260px;
+  height: 100%;
 }
 
 .el-header img {
@@ -39,26 +33,13 @@ body > .el-container {
   z-index: index 1;
   float: left;
 }
-
-/* .el-header p {
-  font-size: 25px;
-  text-align: center;
-  color: rgb(181, 80, 85);
-  font-weight: bold;
-  white-space: nowrap;
-  opacity: 1;
-  width: 1007px;
-  height: 97px;
-  margin-top:auto;
-} */
 .menu {
   color: white;
   font-weight: bold;
   text-align: left;
   width: 200px;
-  height: 0px;
-
-
+  height: 500px;
+  border-color:transparent;
 }
 
 .menu span {
@@ -85,4 +66,10 @@ body > .el-container {
   font-size: 25px;
   text-decoration:none;
   color:rgb(181, 80, 85);
+}
+#app{
+	width:1250px;
+	height:500px;
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
 }
