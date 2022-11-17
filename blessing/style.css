@@ -1,0 +1,188 @@
+/*top and background*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none; }
+  a:link {
+    text-decoration: none;
+    outline: none; }
+  a:visited {
+    text-decoration: none;
+    outline: none; }
+  a:hover {
+    text-decoration: none;
+    color: #6b0e7a;
+    outline: none; }
+
+.bp{
+    position: fixed;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.top-bar {
+    min-width: 1240px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+}
+.box-top {
+    width: 100%;
+    min-width: 1240px;
+    background-color: #EDE0D7;
+    padding:20px 0px 20px 0px;
+}
+.top-ui li{
+    width:33%;
+    min-width: 50px;
+    float: left;
+    text-align: center;
+    display: block;
+}
+.titlecss{
+    margin: -10px 95px 0px 105px;
+    color: #980F17;
+}
+.top-ui a{
+    margin: 0;
+    float: right;
+    color: #980F17;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 12px;
+}
+.top-ui a:hover{
+    color: #b90e19;
+}
+.top-ui img{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    top: -15px;
+}
+.top-ui a img{
+  height: 30px;
+  margin: 5px;
+  float: right;
+}
+
+/*视频祝福块*/
+.box-up{
+  width: 100%;
+  min-width: 1240px;
+  height: 67px;
+  margin: 80px 0px 20px 0px;
+  text-align: center;
+}
+.box-up h3{
+  font-size: 30px;
+  background-image: -webkit-linear-gradient(-55deg, #6b0e7a, #c04845);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*查看更多*/
+.box-down{
+  width: 100%;
+  min-width: 1240px;
+  height: 67px;
+  margin: 20px auto;
+  padding: 60px auto;
+  text-align: center;
+}
+  .box-down a{
+    border-radius: 0px;
+    font-size: 15px;
+    font-family: Microsoft YaHei, Microsoft YaHei-Normal;
+    font-weight: normal;
+    color: #980f17;
+    border-bottom: #980f17 solid 2px;
+    line-height: 48px;
+    -webkit-transition: All 0.5s ease;
+  }
+  .box-down a:hover {
+    color: #6b0e7a;
+    border-color: #6b0e7a; }
+
+
+
+
+
+/*视频轮转*/
+.slide{
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.slide ul{
+  margin: 0;
+  padding: 0;
+  width: calc(500px * 3);
+  transition: All 0.5s;
+}
+.slide li{
+  float: left;
+  width: 500px;
+  height: 300px;
+  list-style: none;
+  font-size: 50px;
+}
+
+.slide input[name="button"] {
+  display: none;
+
+}
+.slide label[for^="button"] {
+  position: absolute;
+  top: 270px;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: .3s;
+}
+.slide label[for="button1"] {
+  left: 40%;
+}
+.slide label[for="button2"] {
+  left: 45%;
+}
+.slide label[for="button3"] {
+  left: 50%;
+}
+#button1:checked ~ul {
+  margin-left: 0;
+}
+#button2:checked ~ul {
+  margin-left: -500px;
+}
+#button3:checked ~ul {
+  margin-left: -1000px;
+}
+#button1:checked ~ label[for="button1"] {
+  background: rgb(255,80,0);
+}
+#button2:checked ~ label[for="button2"] {
+  background: rgb(255,80,0);
+}
+
+#button3:checked ~ label[for="button3"] {
+  background: rgb(255,80,0);
+}
