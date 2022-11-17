@@ -81,12 +81,12 @@ a {
   width: 100%;
   min-width: 1240px;
   height: 67px;
-  margin: 80px 0px 20px 0px;
+  margin: 60px 0px 0px 0px;
   text-align: center;
 }
 .box-up h3{
   font-size: 30px;
-  background-image: -webkit-linear-gradient(-55deg, #6b0e7a, #c04845);
+  background-image: -webkit-linear-gradient(45deg, #6b0e7a 30%, #c04845 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,8 +96,8 @@ a {
   width: 100%;
   min-width: 1240px;
   height: 67px;
-  margin: 20px auto;
-  padding: 60px auto;
+  margin: 0px auto;
+  padding: 0px auto;
   text-align: center;
 }
   .box-down a{
@@ -114,29 +114,26 @@ a {
     color: #6b0e7a;
     border-color: #6b0e7a; }
 
-
-
-
-
 /*视频轮转*/
 .slide{
   position: relative;
   margin: 0 auto;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   text-align: center;
   overflow: hidden;
+  border-radius: 20px;
 }
 .slide ul{
   margin: 0;
   padding: 0;
-  width: calc(500px * 3);
+  width: calc(600px * 3);
   transition: All 0.5s;
 }
 .slide li{
   float: left;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   list-style: none;
   font-size: 50px;
 }
@@ -147,10 +144,10 @@ a {
 }
 .slide label[for^="button"] {
   position: absolute;
-  top: 270px;
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
+  top: 360px;
+  width: 15px;
+  height: 15px;
+  margin: 0 25px;
   line-height: 20px;
   color: #fff;
   background-color: #fff;
@@ -171,10 +168,10 @@ a {
   margin-left: 0;
 }
 #button2:checked ~ul {
-  margin-left: -500px;
+  margin-left: -600px;
 }
 #button3:checked ~ul {
-  margin-left: -1000px;
+  margin-left: -1200px;
 }
 #button1:checked ~ label[for="button1"] {
   background: rgb(255,80,0);
