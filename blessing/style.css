@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+body{
+  background-color: #EDE0D7;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -32,6 +36,7 @@ a {
     width: 100%;
     height: 50px;
     margin: 0;
+    top: 0px;
     display: flex;
 }
 .box-top {
@@ -183,3 +188,95 @@ a {
 #button3:checked ~ label[for="button3"] {
   background: rgb(255,80,0);
 }
+
+/*祝福视频界面*/
+.nav-bar{
+  margin: 40px 0;
+  padding: 40px 100px;
+  height: 60px;
+  background-image: url("source/navi-bar.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: #fff;
+}
+  .nav-bar img{
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+  }
+  .nav-bar li{
+    min-width: 20px;
+    float: left;
+    text-align: left;
+  }
+  .nav-bar h2{
+    margin: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .nav-bar i{
+    margin: 0 10px;
+    padding: auto;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(source/icon1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .nav-bar a{
+    color: #fff;
+    font-size: 5px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+  .nav-bar a:hover{
+    opacity: .8;
+    filter: alpha(opacity=80);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';
+  }
+
+.box-bd ul{
+  width: auto;
+  height: 1500px;
+}
+  .box-bd ul li{
+    float: left;
+    width: 348px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+  .box-bd ul li img{
+    display: block;
+    float: left;
+    width: 75%;
+    margin-top: 35px;
+    margin-left: 43px;
+    transition: all 0.3s;
+  }
+  .box-bd ul li img:hover{
+    transform: scale(1.05);
+  }
+  .box-bd ul li h4{
+    font-size: 17px;
+    display: block;
+    float: left;
+    margin-top: 25px;
+    margin-left: 43px;
+  }
+
